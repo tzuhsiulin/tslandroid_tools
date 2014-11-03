@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">android_pratice</string>
+    <string name="title_activity_pager_sliding_strip_tester">PagerSlidingStripSample</string>
+    <string name="title_activity_listview">ListViewSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="listview_header_pulling">向下拉，即可更新</string>
+    <string name="listview_header_pulling_down">放開手指，即可更新</string>
+    <string name="listview_header_update">更新中，請稍後</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_divide_line">#0A000000</color>
+    <color name="tab_division_line">#1A000000</color>
+    <color name="tab_indicator_line">#FF666666</color>
+    <color name="tab_pressed_bg">#6633B5E5</color>
+</resources>
