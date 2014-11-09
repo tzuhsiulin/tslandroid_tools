@@ -17,10 +17,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.tsl.android_practice" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf7438d0-943c-46c1-b54c-9dd5bc1595df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bf7438d0-943c-46c1-b54c-9dd5bc1595df" name="Default" comment="" />
     <ignored path="tslandroid_tools.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,8 +73,8 @@
       <file leaf-file-name="TestRounderViewActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tsl/android_practice/main/rounderview/TestRounderViewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5060241" vertical-offset="0" max-vertical-offset="415">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.7590361" vertical-offset="0" max-vertical-offset="415">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1044,6 +1041,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="07965b27" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -1195,6 +1193,9 @@
       <AnalysisUIOptions />
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bf7438d0-943c-46c1-b54c-9dd5bc1595df" name="Default" comment="" />
@@ -1205,7 +1206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1481,8 +1482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tsl/android_practice/main/rounderview/TestRounderViewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5060241" vertical-offset="0" max-vertical-offset="415">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.7590361" vertical-offset="0" max-vertical-offset="415">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
