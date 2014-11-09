@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.tsl.android_practice.R;
-import com.tsl.android_practice.ui.viewpager.PagerSlidingStrip;
+import com.tsl.android_practice.ui.PagerSlidingStrip;
 
 public class ViewPagerSlidingStripTester extends FragmentActivity {
 

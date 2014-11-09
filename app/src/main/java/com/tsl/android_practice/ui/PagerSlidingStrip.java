@@ -1,4 +1,4 @@
-package com.tsl.android_practice.ui.viewpager;
+package com.tsl.android_practice.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;

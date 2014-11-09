@@ -27,6 +27,12 @@
             android:parentActivityName=".main.SampleList">
         </activity>
 
+
+        <activity
+            android:name=".main.rounderview.TestRounderViewActivity"
+            android:label="@string/title_activity_listview">
+        </activity>
+
     </application>
 
 </manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rounderview_background">#3c4251</color>
+    <color name="rounderview_inner_circle">#4f7794</color>
+    <color name="rounderview_outer_circle">#9aa7a4</color>
+</resources>

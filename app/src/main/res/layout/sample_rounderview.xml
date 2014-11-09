@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tsl.android_practice.ui.RounderProgressBar
+        android:id="@+id/rounder_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        style="@style/DefaultRounderViewStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="12sp"
+            android:textColor="#fff" />
+
+    </com.tsl.android_practice.ui.RounderProgressBar>
+
+</LinearLayout>

@@ -5,4 +5,13 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="DefaultRounderViewStyle">
+        <item name="android:background">@color/rounderview_background</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="outer_circle_size">@dimen/default_outer_cycle_size</item>
+        <item name="inner_circle_size">@dimen/default_inner_cycle_size</item>
+        <item name="outer_circle_color">@color/rounderview_outer_circle</item>
+        <item name="inner_circle_color">@color/rounderview_inner_circle</item>
+    </style>
+
 </resources>

@@ -9,6 +9,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.tsl.android_practice.main.listview.ListViewTester;
+import com.tsl.android_practice.main.rounderview.TestRounderViewActivity;
 import com.tsl.android_practice.main.viewpager.ViewPagerSlidingStripTester;
 
 /**
@@ -18,7 +19,8 @@ public class SampleList extends ListActivity {
 
     private final static String[] practiceList = new String[]{
             "ViewPager's Tab Sliding Strip",
-            "ListView drop down header"
+            "ListView drop down header",
+            "RounderView"
     };
 
     private ListAdapter sampleListAdapter;
@@ -42,6 +44,9 @@ public class SampleList extends ListActivity {
                 break;
             case 1:
                 intent = new Intent(this, ListViewTester.class);
+                break;
+            case 2:
+                intent = new Intent(this, TestRounderViewActivity.class);
                 break;
         }
         startActivity(intent);
