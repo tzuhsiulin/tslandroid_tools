@@ -108,11 +108,19 @@ public class RounderView extends FrameLayout {
         paddingValue[3] = getPaddingBottom();
 
         // cal circle diameter
-        diameter = viewWidth > viewHeight ? viewHeight : viewWidth;
+        int measureSize = 0;
+        if (viewWidth > viewHeight && viewHeight != 0) {
+            diameter = viewHeight - (int)(paddingValue[1] + paddingValue[3]);
+            measureSize = diameter;
+        }
+        else {
+            diameter = viewWidth - (int)(paddingValue[0] + paddingValue[2]);
+            measureSize = viewWidth;
+        }
 
-        // cal circle center point
+        // cal radius
         radius = diameter / 2;
-        circleCenterPoint = new Point(viewWidth / 2, viewHeight / 2);
+        circleCenterPoint = new Point(measureSize / 2, measureSize / 2);
 
         // set child view size
 //        for (int i = 0; i < getChildCount(); i++) {
@@ -131,7 +139,7 @@ public class RounderView extends FrameLayout {
 //        }
 
         // set view size
-        setMeasuredDimension(viewWidth, viewHeight);
+        setMeasuredDimension(measureSize, measureSize);
     }
 
     @Override
