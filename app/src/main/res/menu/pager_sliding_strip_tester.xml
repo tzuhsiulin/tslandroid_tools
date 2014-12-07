@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.tsl.android_practice.main.viewpager.ViewPagerSlidingStripTester" >
+    tools:context="com.tsl.tools.main.viewpager.ViewPagerSlidingStripTester" >
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"

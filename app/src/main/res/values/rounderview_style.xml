@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultRounderViewStyle">
+        <item name="android:background">@color/rounderview_background</item>
+        <item name="android:padding">@dimen/default_margin</item>
+        <item name="outer_circle_size">@dimen/default_outer_cycle_size</item>
+        <item name="inner_circle_size">@dimen/default_inner_cycle_size</item>
+        <item name="outer_circle_color">@color/rounderview_outer_circle</item>
+        <item name="inner_circle_color">@color/rounderview_inner_circle</item>
+        <item name="rounder_progressbar_color">@color/rounderview_rounder_progressbar_color</item>
+    </style>
+</resources>

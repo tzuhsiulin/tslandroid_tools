@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tsl.android_practice" >
+    package="com.lintzuhsiu.tools" >
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.tsl.android_practice.main.SampleList"
+        <activity android:name="com.lintzuhsiu.tools.examples.SampleList"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,20 +16,20 @@
         </activity>
 
         <activity
-            android:name=".main.viewpager.ViewPagerSlidingStripTester"
+            android:name="com.lintzuhsiu.tools.examples.viewpager.ViewPagerSlidingStripTester"
             android:label="@string/title_activity_pager_sliding_strip_tester"
-            android:parentActivityName=".main.SampleList">
+            android:parentActivityName="com.lintzuhsiu.tools.examples.SampleList">
         </activity>
 
         <activity
-            android:name=".main.listview.ListViewTester"
+            android:name="com.lintzuhsiu.tools.examples.listview.ListViewTester"
             android:label="@string/title_activity_listview"
-            android:parentActivityName=".main.SampleList">
+            android:parentActivityName="com.lintzuhsiu.tools.examples.SampleList">
         </activity>
 
 
         <activity
-            android:name=".main.rounderview.TestRounderViewActivity"
+            android:name="com.lintzuhsiu.tools.examples.rounderview.TestRounderViewActivity"
             android:label="@string/title_activity_listview">
         </activity>
 
