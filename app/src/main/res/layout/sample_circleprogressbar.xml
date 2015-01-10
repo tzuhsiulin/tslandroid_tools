@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <com.lintzuhsiu.tools.ui.RounderProgressBar
-        android:id="@+id/rounder_progress_bar"
+        android:id="@+id/circle_progress_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/DefaultRounderViewStyle">
+        style="@style/DefaultCircleViewStyle">
 
         <TextView
             android:layout_width="wrap_content"

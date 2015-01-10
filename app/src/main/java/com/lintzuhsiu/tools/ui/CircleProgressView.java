@@ -20,7 +20,7 @@ import com.lintzuhsiu.tools.R;
 /**
  * Created by lintzuhsiu on 14/11/8.
  */
-public class RounderView extends FrameLayout {
+public class CircleProgressView extends FrameLayout {
 
     class PaddingType {
         public static final int LEFT    = 0;
@@ -45,17 +45,18 @@ public class RounderView extends FrameLayout {
     private int outerCircleColor;
     protected int rounderProgressBarColor;
     protected float[] paddingValue;
+    private float roundProgress;
 
     // draw attr
     protected Paint paint;
     private RectF outerRect;
     private RectF innerRect;
 
-    public RounderView(Context context) {
+    public CircleProgressView(Context context) {
         this(context, null);
     }
 
-    public RounderView(Context context, AttributeSet attrs) {
+    public CircleProgressView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
 
 //        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.RounderView, 0, 0);
@@ -73,7 +74,7 @@ public class RounderView extends FrameLayout {
 //        }
     }
 
-    public RounderView(Context context, AttributeSet attrs, int defStyle) {
+    public CircleProgressView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         this.context = context;
         paddingValue = new float[4];
@@ -85,14 +86,14 @@ public class RounderView extends FrameLayout {
         paint.setAntiAlias(true);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
 
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.RounderView,
-                defStyle, R.style.DefaultRounderViewStyle);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressView,
+                defStyle, R.style.DefaultCircleViewStyle);
         try {
-            outerCircleSize = typedArray.getDimension(R.styleable.RounderView_outer_circle_size, 0);
-            innerCircleSize = typedArray.getDimension(R.styleable.RounderView_inner_circle_size, 0);
-            outerCircleColor = typedArray.getColor(R.styleable.RounderView_outer_circle_color, 0);
-            innerCircleColor = typedArray.getColor(R.styleable.RounderView_inner_circle_color, 0);
-            rounderProgressBarColor = typedArray.getColor(R.styleable.RounderView_rounder_progressbar_color, 0);
+            outerCircleSize = typedArray.getDimension(R.styleable.CircleProgressView_outer_circle_size, 0);
+            innerCircleSize = typedArray.getDimension(R.styleable.CircleProgressView_inner_circle_size, 0);
+            outerCircleColor = typedArray.getColor(R.styleable.CircleProgressView_outer_circle_color, 0);
+            innerCircleColor = typedArray.getColor(R.styleable.CircleProgressView_inner_circle_color, 0);
+            rounderProgressBarColor = typedArray.getColor(R.styleable.CircleProgressView_progressbar_color, 0);
         } finally {
             typedArray.recycle();
         }
@@ -146,22 +147,6 @@ public class RounderView extends FrameLayout {
                 viewWidth / 2 + getParentPadding(0, PaddingType.LEFT),
                 measureSize / 2 + getParentPadding(0, PaddingType.TOP));
 
-        // set child view size
-//        for (int i = 0; i < getChildCount(); i++) {
-//            View itemView = getChildAt(i);
-//            int a = itemView.getMeasuredWidth();
-//
-//            if (a >= diameter) {
-//                measureChildWithMargins(itemView,
-//                        MeasureSpec.makeMeasureSpec(diameter, MeasureSpec.UNSPECIFIED),
-//                        (int) ((thickness * 2) - (paddingValue[0] + paddingValue[2])),
-//                        MeasureSpec.makeMeasureSpec(diameter, MeasureSpec.UNSPECIFIED),
-//                        (int) ((thickness * 2) - (paddingValue[0] + paddingValue[2]))
-//                );
-//            }
-//
-//        }
-
         // set view size
         setMeasuredDimension(viewWidth, measureSize);
     }
@@ -190,7 +175,8 @@ public class RounderView extends FrameLayout {
 
         canvas.restore();
         drawOuterCircle(canvas);
-//        drawInnerCircle(canvas);
+        drawProgress(canvas);
+        drawInnerCircle(canvas);
     }
 
     @Override
@@ -198,6 +184,26 @@ public class RounderView extends FrameLayout {
 //        super.setBackgroundColor(color);
         outerCircleColor = color;
         invalidate();
+    }
+
+    public void setProgress(float progress) {
+        this.roundProgress = progress;
+        invalidate();
+    }
+
+    private void drawProgress(Canvas canvas) {
+        RectF rectf = new RectF();
+        rectf.set(
+                circleCenterPoint.x - radius,
+                circleCenterPoint.y - radius,
+                circleCenterPoint.x + radius,
+                circleCenterPoint.y + radius
+        );
+
+        paint.setColor(rounderProgressBarColor);
+
+        float sweepAngle = Math.round(roundProgress * 360);
+        canvas.drawArc(rectf, -90, sweepAngle, true, paint);
     }
 
     protected void drawOuterCircle(Canvas canvas) {

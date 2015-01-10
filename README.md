@@ -20,35 +20,15 @@ tslandroid_tools
         android:layout_height="match_parent"/>
 	```
 	
-3. RounderView
-	```
-	<com.tsl.android_practice.ui.RounderView
-        android:id="@+id/rounder_progress_bar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="50dp"
-        style="@style/DefaultRounderViewStyle">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="123"
-            android:textSize="12sp"
-            android:textColor="#fff" />
-
-    </com.tsl.android_practice.ui.RounderView>
-	```
-	
-4. RounderProgressBar
+3. CircleProgressBar
 
 	xml:
 	```
-	<com.tsl.android_practice.ui.RounderProgressBar
-        android:id="@+id/rounder_progress_bar"
+	<com.lintzuhsiu.tools.ui.RounderProgressBar
+        android:id="@+id/circle_progress_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="50dp"
-        style="@style/DefaultRounderViewStyle">
+        style="@style/DefaultCircleViewStyle">
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,14 +37,14 @@ tslandroid_tools
             android:textSize="12sp"
             android:textColor="#fff" />
 
-    </com.tsl.android_practice.ui.RounderProgressBar>
+    </com.lintzuhsiu.tools.ui.RounderProgressBar>
 	```
 	Java:	
 	```
-	RounderProgressBar progressBar = (RounderProgressBar) findViewById(R.id.rounder_progress_bar);
-    progressBar.setProgress(Color.DKGRAY, 0.2f);
-    progressBar.setProgress(Color.BLUE, 0.2f);
-    progressBar.setProgress(Color.RED, 0.2f);
+	CircleProgressView progressBar = (CircleProgressView) findViewById(R.id.circle_progress_bar);
+    progressBar.setProgress(0.2f);
+    progressBar.setProgress(0.2f);
+    progressBar.setProgress(0.2f);
 	```
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="RounderView">
+    <declare-styleable name="CircleProgressView">
         <attr name="outer_circle_color" format="color" />
         <attr name="inner_circle_color" format="color" />
         <attr name="outer_circle_size" format="dimension" />
         <attr name="inner_circle_size" format="dimension" />
-        <attr name="rounder_progressbar_color" format="color" />
+        <attr name="progressbar_color" format="color" />
     </declare-styleable>
 </resources>

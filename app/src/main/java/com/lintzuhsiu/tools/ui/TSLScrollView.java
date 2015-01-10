@@ -48,6 +48,8 @@ public class TSLScrollView extends ScrollView {
                 headerView.layout(0, firstViewHeight, headerView.getWidth(), firstViewHeight + headerView.getHeight());
             }
         }
+
+        invalidate();
     }
 
     /*
@@ -63,7 +65,7 @@ public class TSLScrollView extends ScrollView {
 
         ViewGroup viewGroup = (ViewGroup) this.getChildAt(0);
         firstView = viewGroup.getChildAt(0);
-        headerView = viewGroup.getChildAt(1);
+        headerView = viewGroup.getChildAt(2);
 
         currentScrollY = t;
         firstView.scrollTo(0, -(int)(t * 0.2));

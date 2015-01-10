@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="circleview_background">#3c4251</color>
+    <color name="circleview_inner_circle">#4f7794</color>
+    <color name="circleview_outer_circle">#9aa7a4</color>
+    <color name="circleview_progressbar_color">#88930000</color>
+</resources>
